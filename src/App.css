@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.head_text {
+  margin-top: 1.25rem; /* tương đương với mt-5 */
+  font-size: 3.125rem; /* tương đương với text-5xl */
+  font-weight: 800; /* tương đương với font-extrabold */
+  line-height: 1.15; /* tương đương với leading-[1.15] */
+  color: black; /* màu văn bản */
+  @screen sm {
+    font-size: 3.75rem; /* tương đương với sm:text-6xl */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red_gradient {
+  background-clip: text; /* tương đương với bg-clip-text */
+  color: transparent; /* tương đương với text-transparent */
+  background-image: linear-gradient(to right, #f56565, #c53030);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
